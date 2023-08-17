@@ -1,0 +1,10 @@
+apiVersion: bigquery.gcp.upbound.io/v1beta1
+kind: Dataset
+metadata:
+  name: example_dataset
+spec:
+  forProvider:
+    defaultTableExpirationMs: 3600000
+    description: This is a test description
+    friendlyName: example_dataset
+    location: US
